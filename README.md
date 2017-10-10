@@ -1,2 +1,3 @@
 # FunctionGraphs
-![Alt text](/function graphs/1/x.png?raw=true "Optional Title")
+
+![font samples - dark](/function graphs/1/x.png)
