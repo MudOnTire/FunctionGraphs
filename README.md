@@ -14,3 +14,15 @@
 
 ### cot(x)
 ![cot(x)](function%20graphs/cot(x).png?raw=true)
+
+### sec(x)
+![sec(x)](function%20graphs/sec(x).png?raw=true)
+
+### csc(x)
+![csc(x)](function%20graphs/csc(x).png?raw=true)
+
+### atan(x)
+![atan(x)](function%20graphs/atan(x).png?raw=true)
+
+### sin(1/x)
+![sin(1/x)](function%20graphs/sin(1:x).png?raw=true)
