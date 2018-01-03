@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title></title>
 	<style>
-		body{
+		* {
+			box-sizing: border-box;
 			margin: 0;
 			padding: 0;
-			width: 4000px;
+			list-style: none;
 		}
-		canvas{
+
+		canvas {
 			background-color: #fff;
+		}
+
+		.tag-container {
+			overflow: hidden;
+			margin: 20px;
+		}
+
+		.tag {
+			padding: 0 8px;
+			margin: 0 10px;
+			float: left;
+			height: 40px;
+			line-height: 40px;
+			background-color: dodgerblue;
+			border-radius: 5px;
+			color: #fff;
+		}
+
+		.tag:hover {
+			cursor: pointer;
+		}
+
+		.small-lineHeight {
+			line-height: 30px;
+		}
+
+		#board {
+			background-color: #eee;
 		}
 	</style>
 </head>
+
 <body>
 
-<canvas id="board" width="2000" height="400">
-	the browser doesn't support canvas
-</canvas>
+	<ul class="tag-container">
+		<li class="tag" onclick="drawTrig('sin', 300, 800, 200)">sin(x)</li>
+		<li class="tag" onclick="drawTrig('cos', 300, 800, 200)">cos(x)</li>
+		<li class="tag" onclick="drawTrig('tan', 300, 500, 50)">tan(x)</li>
+		<li class="tag" onclick="drawTrig('sec', 300, 500, 50)">sec(x)</li>
+		<li class="tag" onclick="drawTrig('csc', 300, 500, 50)">csc(x)</li>
+		<li class="tag" onclick="drawTrig('cot', 300, 500, 50)">cot(x)</li>
+		<li class="tag" onclick="drawReciprocal(300,10000)">1/x</li>
+		<li class="tag small-lineHeight" onclick="drawPower(3, 300, 1000)">x
+			<sup>n</sup>(n&gt;1)</li>
+		<li class="tag small-lineHeight" onclick="drawPower(-3, 300, 1000)">x
+			<sup>n</sup>(n&lt;1)</li>
+	</ul>
 
-<script type="text/javascript" src="main.js"></script>
+	<canvas id="board" width="1536" height="600">
+		the browser doesn't support canvas
+	</canvas>
+
+	<script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
